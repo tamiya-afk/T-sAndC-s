@@ -1,0 +1,246 @@
+<style>
+    /* 🌐 Imports high-end boutique fonts */
+    @import url('https://googleapis.com');
+
+    body { 
+        background-color: #fcfbfa; 
+        font-family: 'Poppins', sans-serif; 
+        text-align: center; 
+        padding: 40px 20px;
+    }
+    
+    h1 { 
+        font-family: 'Playfair Display', serif;
+        color: #4a2c11; 
+        font-size: 44px; 
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    
+    .subtitle {
+        font-family: 'Playfair Display', serif;
+        color: #8c7662; 
+        font-style: italic;
+        font-size: 16px;
+        margin-top: 0;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+
+    /* 🏷️ 1. Automated Flash Ticker Box */
+    .ticker-box {
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        background-color: #8e2b4b; /* Starts Velvet Red */
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 8px 20px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 10px rgba(142, 43, 75, 0.15);
+        animation: flashTicker 3s infinite alternate; /* Automatic colour changer */
+    }
+
+    @keyframes flashTicker {
+        0% { background-color: #8e2b4b; box-shadow: 0 4px 10px rgba(142, 43, 75, 0.15); }
+        100% { background-color: #d97706; box-shadow: 0 4px 10px rgba(217, 119, 6, 0.2); } /* Shifts to Warning Amber */
+    }
+    
+    /* Grid system layout for the 6 menu boxes */
+    .menu-grid {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .menu-card {
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 12px; 
+        border: 1px solid #eae5df; 
+        box-shadow: 0 10px 30px rgba(74, 44, 17, 0.04); 
+        text-align: left;
+    }
+    
+    .cookie-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .size-tag {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        color: #999;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    
+    /* Card Title Color Accents */
+    .chic-chip { color: #b17a50; }     
+    .birthday-cake { color: #8e2b4b; } 
+    .mm-smash { color: #d97706; }      
+    .tiramisu { color: #5c4033; }      
+    .red-velvet { color: #a62424; }    
+    .smores { color: #a07855; }        
+    
+    .cookie-desc { 
+        color: #6e655f; 
+        font-size: 14px; 
+        font-weight: 300;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Form Fields */
+    .input-field {
+        font-family: 'Poppins', sans-serif;
+        width: 85%;
+        max-width: 360px;
+        padding: 16px;
+        font-size: 13px;
+        border: 1px solid #eae5df;
+        border-radius: 4px;
+        margin: 10px auto;
+        outline: none;
+        text-align: center;
+        letter-spacing: 1px;
+        display: block;
+    }
+
+    .input-field:focus { border-color: #4a2c11; }
+
+    .waitlist-btn {
+        font-family: 'Poppins', sans-serif;
+        background-color: #4a2c11; 
+        color: #ffffff;
+        padding: 16px 50px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 4px; 
+        margin-top: 15px;
+        cursor: pointer;
+        box-shadow: 0 12px 24px rgba(74, 44, 17, 0.15);
+    }
+
+    /* 📝 2. Legal Terms & Conditions Print Area */
+    .legal-footer {
+        max-width: 600px;
+        margin: 60px auto 20px auto;
+        padding-top: 20px;
+        border-top: 1px solid #eae5df;
+        text-align: justify;
+    }
+
+    .legal-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #4a2c11;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .legal-text {
+        font-size: 11px;
+        color: #8c7662;
+        line-height: 1.8;
+    }
+
+    /* 📊 3. GCSE Portfolio Portfolio Tracker Overlay */
+    .portfolio-badge {
+        display: block;
+        background-color: #eae5df;
+        color: #6e655f;
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        max-width: 250px;
+        margin: 40px auto 0 auto;
+        text-transform: uppercase;
+    }
+</style>
+
+<h1>Ts and Cs</h1>
+<p class="subtitle">The Terms & Conditions of Premium Baking. 📝</p>
+
+<!-- The Menu Layout -->
+<div class="menu-grid">
+    <div class="menu-card">
+        <h3 class="cookie-title chic-chip">The Chic Chip <span class="size-tag">90G</span></h3>
+        <p class="cookie-desc">Deep golden brown dough pooled with glossy dark and milk chocolate chunks, hit with flaky sea salt. Crystals set to perfection.</p>
+    </div>
+    <div class="menu-card">
+        <h3 class="cookie-title birthday-cake">The Birthday Cake <span class="size-tag">90G</span></h3>
+        <p class="cookie-desc">Buttery vanilla bean base packed tightly with neon rainbow sprinkles and melted white chocolate pockets.</p>
+    </div>
+    <div class="menu-card">
+        <h3 class="cookie-title mm-smash">The M&M Smash <span class="size-tag">90G</span></h3>
+        <p class="cookie-desc">Vibrant candy-coated milk chocolate M&Ms pressed into a crunchy mosaic outer shell for ultimate texture.</p>
+    </div>
+    <div class="menu-card">
+        <h3 class="cookie-title tiramisu">The Tiramisu Luxury <span class="size-tag">90G</span></h3>
+        <p class="cookie-desc">Espresso-infused coffee dough dusted with premium velvet cocoa, surrounding a silky mascarpone cream core.</p>
+    </div>
+    <div class="menu-card">
+        <h3 class="cookie-title red-velvet">The Red Velvet Oreo <span class="size-tag">90G</span></h3>
+        <p class="cookie-desc">Striking crimson cocoa dough cutting open to reveal a whole black-and-white Oreo biscuit hidden inside.</p>
+    </div>
+    <div class="menu-card">
+        <h3 class="cookie-title smores">The S'mores Showstopper <span class="size-tag">130G PREMIUM</span></h3>
+        <p class="cookie-desc">Massive toasted amber campfire marshmallow pull built inside a deep digestive biscuit crumb base.</p>
+    </div>
+</div>
+
+<!-- Inputs & Order Trigger -->
+<div style="margin-top: 40px;">
+    <div id="statusTicker" class="ticker-box">⚠️ Only 21 Boxes Allocation Remaining</div>
+    
+    <input type="text" id="customerName" class="input-field" placeholder="ENTER YOUR FIRST NAME">
+    <input type="email" id="customerEmail" class="input-field" placeholder="ENTER YOUR EMAIL ADDRESS">
+    
+    <button class="waitlist-btn" onclick="processReservation()">Pre-Book Here</button>
+</div>
+
+<!-- 2. Legal Section -->
+<div class="legal-footer">
+    <div class="legal-title">Official Terms & Conditions (Ts & Cs)</div>
+    <p class="legal-text">
+        All drops are strictly limited to twenty-one (21) boxes per industrial cycle. The digital pre-book window initializes on Mondays at 18:00 BST and shifts into lockdown on Wednesdays at 17:00 BST. Due to the high-level custom deployment of ingredients sourced on Wednesday evenings, cancellations, modifications, or refund protocols requested after lockdown initialization will be null and void. Fresh-baking occurs exclusively on Friday mornings, immediately prior to Mayfair career shifts.
+    </p>
+</div>
+
+<!-- 3. GCSE Business Portfolio Anchor -->
+<div class="portfolio-badge">🎯 Business Studies Case Study Asset</div>
+
+<script>
+    function processReservation() {
+        var name = document.getElementById("customerName").value;
+        var email = document.getElementById("customerEmail").value;
+        
+        if (name === "" || email === "") {
+            alert("Please complete both parameters to verify your reservation code. 📝");
+        } else {
+            alert("Contract Sealed! Welcome, " + name + ". One Signature 6-Box allocation has been locked for " + email + ". Check your inbox to settle terms. 📝");
+        }
+    }
+</script>
